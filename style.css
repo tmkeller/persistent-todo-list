@@ -5,8 +5,13 @@
 }
 
 body {
-  font-family: "Concert One", cursive;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 16px;
+  background-color: black;
+}
+
+label {
+  color: white;
 }
 
 input {
@@ -15,13 +20,19 @@ input {
   padding: 6px;
   margin-top: 10px;
   font-size: 2.4em;
+  color: white;
   border: none;
+  background-color: #888888;
+}
+
+input::placeholder {
+  color: #ddd;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-  background-color: white;
+  background-color: #333333;
 }
 
 li {
@@ -29,10 +40,11 @@ li {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
-  background-color: #ff5d88;
+  background-color: #666666;
   color: white;
   font-size: 1.5em;
   line-height: 1.5;
+  border-radius: 4px;
 }
 
 li:before {
@@ -51,13 +63,14 @@ li button {
   border: none;
   height: 40px;
   cursor: pointer;
-  background-color: #ff9500;
+  background-color: red;
   color: white;
   font-size: 1em;
+  border-radius: 5px;
 }
 
 li button:hover {
-  background-color: #febc5d;
+  background-color: rgba(200, 0, 0, 0.575);
 }
 
 .todos {
